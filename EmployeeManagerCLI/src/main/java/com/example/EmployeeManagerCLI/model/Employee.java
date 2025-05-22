@@ -1,4 +1,4 @@
-package model;
+package com.example.EmployeeManagerCLI.model;
 
 public class Employee {
     private String id;
@@ -26,6 +26,6 @@ public class Employee {
     public String getRole() { return role; }
     public void setRole(String role) { this.role = role; }
 
-    public double getHourly_pay() { return hourlyPay; }
-    public void setHourly_pay() { this.hourlyPay = hourlyPay;}
+    public double getHourlyPay() { return hourlyPay; }
+    public void setHourlyPay(Double hourlyPay) { this.hourlyPay = hourlyPay;}
 }
