@@ -10,11 +10,11 @@ public class Employee {
 
     }
 
-    public Employee(String id, String name, String role, double hourly_pay){
+    public Employee(String id, String name, String role, double hourlyPay){
         this.id = id;
         this.name = name;
         this.role = role;
-        this. hourlyPay = hourlyPay;
+        this.hourlyPay = hourlyPay;
     }
 
     public String getId() { return id; }

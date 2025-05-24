@@ -8,7 +8,7 @@ import java.util.*;
 @Service
 public class EmployeeService {
 
-    private Map<String, Employee> employeeMap = new HashMap<>();
+    final private Map<String, Employee> employeeMap = new HashMap<>();
 
     public Employee createEmployee(Employee employee){
         String id = UUID.randomUUID().toString();
