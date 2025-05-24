@@ -13,7 +13,7 @@ This project allows you to create, list, retrieve, update, and delete employees 
 - **Update employee** (PUT `/employees/{id}`): Updates an existing employee's information.
 - **Delete employee** (DELETE `/employees/{id}`): Removes the employee by ID.
 
-Currently, data is stored in memory using a `HashMap` inside the `EmployeeService`. This means all data is lost when the application stops.
+Currently, employee data is persisted in a MySQL database using Spring Data JPA repositories, replacing the previous in-memory storage.
 
 ---
 
@@ -23,14 +23,12 @@ Currently, data is stored in memory using a `HashMap` inside the `EmployeeServic
 - Spring Boot (Web)
 - Maven (dependency management and build)
 - Java Collections Framework for in-memory data storage
+- Spring Data JPA (for ORM and repository abstractions)
 - Postman for testing
 
 ---
 
 ## Future Improvements and Possibilities
-
-- **Database persistence:**  
-  Implement relational database support (e.g., H2, MySQL, PostgreSQL) using Spring Data JPA to persist data.
 
 - **Improved error handling:**  
   Create custom exceptions (e.g., `EmployeeNotFoundException`) and use `@ControllerAdvice` for clean and meaningful HTTP error responses.
