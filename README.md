@@ -13,7 +13,7 @@ This project allows you to create, list, retrieve, update, and delete employees 
 - **Update employee** (PUT `/employees/{id}`): Updates an existing employee's information.
 - **Delete employee** (DELETE `/employees/{id}`): Removes the employee by ID.
 
-Currently, employee data is persisted in a MySQL database using Spring Data JPA repositories, replacing the previous in-memory storage.
+Currently, employee data is persisted in a MySQL database using Spring's JdbcTemplate, replacing the previous in-memory storage.
 
 ---
 
@@ -23,7 +23,7 @@ Currently, employee data is persisted in a MySQL database using Spring Data JPA 
 - Spring Boot (Web)
 - Maven (dependency management and build)
 - Java Collections Framework for in-memory data storage
-- Spring Data JPA (for ORM and repository abstractions)
+- Spring JDBC (JdbcTemplate) for database access
 - Postman for testing
 
 ---
